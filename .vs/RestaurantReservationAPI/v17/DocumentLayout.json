@@ -1,0 +1,190 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\loren\\source\\repos\\RestaurantReservationAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0BDB3263-B6F1-44DF-A755-EFA7BC1B0882}|RestaurantReservationAPI.csproj|c:\\users\\loren\\source\\repos\\restaurantreservationapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BDB3263-B6F1-44DF-A755-EFA7BC1B0882}|RestaurantReservationAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BDB3263-B6F1-44DF-A755-EFA7BC1B0882}|RestaurantReservationAPI.csproj|c:\\users\\loren\\source\\repos\\restaurantreservationapi\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BDB3263-B6F1-44DF-A755-EFA7BC1B0882}|RestaurantReservationAPI.csproj|solutionrelative:controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BDB3263-B6F1-44DF-A755-EFA7BC1B0882}|RestaurantReservationAPI.csproj|c:\\users\\loren\\source\\repos\\restaurantreservationapi\\controllers\\orderitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BDB3263-B6F1-44DF-A755-EFA7BC1B0882}|RestaurantReservationAPI.csproj|solutionrelative:controllers\\orderitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BDB3263-B6F1-44DF-A755-EFA7BC1B0882}|RestaurantReservationAPI.csproj|c:\\users\\loren\\source\\repos\\restaurantreservationapi\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BDB3263-B6F1-44DF-A755-EFA7BC1B0882}|RestaurantReservationAPI.csproj|solutionrelative:controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BDB3263-B6F1-44DF-A755-EFA7BC1B0882}|RestaurantReservationAPI.csproj|c:\\users\\loren\\source\\repos\\restaurantreservationapi\\controllers\\menuitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BDB3263-B6F1-44DF-A755-EFA7BC1B0882}|RestaurantReservationAPI.csproj|solutionrelative:controllers\\menuitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BDB3263-B6F1-44DF-A755-EFA7BC1B0882}|RestaurantReservationAPI.csproj|c:\\users\\loren\\source\\repos\\restaurantreservationapi\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BDB3263-B6F1-44DF-A755-EFA7BC1B0882}|RestaurantReservationAPI.csproj|solutionrelative:controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BDB3263-B6F1-44DF-A755-EFA7BC1B0882}|RestaurantReservationAPI.csproj|c:\\users\\loren\\source\\repos\\restaurantreservationapi\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BDB3263-B6F1-44DF-A755-EFA7BC1B0882}|RestaurantReservationAPI.csproj|solutionrelative:controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BDB3263-B6F1-44DF-A755-EFA7BC1B0882}|RestaurantReservationAPI.csproj|c:\\users\\loren\\source\\repos\\restaurantreservationapi\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BDB3263-B6F1-44DF-A755-EFA7BC1B0882}|RestaurantReservationAPI.csproj|solutionrelative:controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BDB3263-B6F1-44DF-A755-EFA7BC1B0882}|RestaurantReservationAPI.csproj|c:\\users\\loren\\source\\repos\\restaurantreservationapi\\contracts\\errorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BDB3263-B6F1-44DF-A755-EFA7BC1B0882}|RestaurantReservationAPI.csproj|solutionrelative:contracts\\errorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BDB3263-B6F1-44DF-A755-EFA7BC1B0882}|RestaurantReservationAPI.csproj|c:\\users\\loren\\source\\repos\\restaurantreservationapi\\contracts\\errormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BDB3263-B6F1-44DF-A755-EFA7BC1B0882}|RestaurantReservationAPI.csproj|solutionrelative:contracts\\errormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\loren\\source\\repos\\RestaurantReservationAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\loren\\source\\repos\\RestaurantReservationAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T00:15:59.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReservationController.cs",
+              "DocumentMoniker": "C:\\Users\\loren\\source\\repos\\RestaurantReservationAPI\\Controllers\\ReservationController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ReservationController.cs",
+              "ToolTip": "C:\\Users\\loren\\source\\repos\\RestaurantReservationAPI\\Controllers\\ReservationController.cs",
+              "RelativeToolTip": "Controllers\\ReservationController.cs",
+              "ViewState": "AQIAAMkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T00:15:55.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderItemController.cs",
+              "DocumentMoniker": "C:\\Users\\loren\\source\\repos\\RestaurantReservationAPI\\Controllers\\OrderItemController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrderItemController.cs",
+              "ToolTip": "C:\\Users\\loren\\source\\repos\\RestaurantReservationAPI\\Controllers\\OrderItemController.cs",
+              "RelativeToolTip": "Controllers\\OrderItemController.cs",
+              "ViewState": "AQIAAMkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T00:15:50.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\loren\\source\\repos\\RestaurantReservationAPI\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\loren\\source\\repos\\RestaurantReservationAPI\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "Controllers\\OrderController.cs",
+              "ViewState": "AQIAAMIAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T00:15:45.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MenuItemController.cs",
+              "DocumentMoniker": "C:\\Users\\loren\\source\\repos\\RestaurantReservationAPI\\Controllers\\MenuItemController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MenuItemController.cs",
+              "ToolTip": "C:\\Users\\loren\\source\\repos\\RestaurantReservationAPI\\Controllers\\MenuItemController.cs",
+              "RelativeToolTip": "Controllers\\MenuItemController.cs",
+              "ViewState": "AQIAAH0AAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T00:15:41.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "C:\\Users\\loren\\source\\repos\\RestaurantReservationAPI\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EmployeeController.cs",
+              "ToolTip": "C:\\Users\\loren\\source\\repos\\RestaurantReservationAPI\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "Controllers\\EmployeeController.cs",
+              "ViewState": "AQIAAKsAAAAAAAAAAAAIwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T00:15:37.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "C:\\Users\\loren\\source\\repos\\RestaurantReservationAPI\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CustomerController.cs",
+              "ToolTip": "C:\\Users\\loren\\source\\repos\\RestaurantReservationAPI\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "Controllers\\CustomerController.cs",
+              "ViewState": "AQIAAIYAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T00:15:33.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuthenticationController.cs",
+              "DocumentMoniker": "C:\\Users\\loren\\source\\repos\\RestaurantReservationAPI\\Controllers\\AuthenticationController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthenticationController.cs",
+              "ToolTip": "C:\\Users\\loren\\source\\repos\\RestaurantReservationAPI\\Controllers\\AuthenticationController.cs",
+              "RelativeToolTip": "Controllers\\AuthenticationController.cs",
+              "ViewState": "AQIAAFgAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T00:15:28.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ErrorResponse.cs",
+              "DocumentMoniker": "C:\\Users\\loren\\source\\repos\\RestaurantReservationAPI\\Contracts\\ErrorResponse.cs",
+              "RelativeDocumentMoniker": "Contracts\\ErrorResponse.cs",
+              "ToolTip": "C:\\Users\\loren\\source\\repos\\RestaurantReservationAPI\\Contracts\\ErrorResponse.cs",
+              "RelativeToolTip": "Contracts\\ErrorResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T00:15:26.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ErrorModel.cs",
+              "DocumentMoniker": "C:\\Users\\loren\\source\\repos\\RestaurantReservationAPI\\Contracts\\ErrorModel.cs",
+              "RelativeDocumentMoniker": "Contracts\\ErrorModel.cs",
+              "ToolTip": "C:\\Users\\loren\\source\\repos\\RestaurantReservationAPI\\Contracts\\ErrorModel.cs",
+              "RelativeToolTip": "Contracts\\ErrorModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T00:15:24.453Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

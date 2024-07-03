@@ -1,0 +1,1444 @@
+{
+	"info": {
+		"_postman_id": "62a4f22d-7059-42ab-8a65-0b5c2a13e0e0",
+		"name": "Restaurant",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29639694"
+	},
+	"item": [
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "AllCustomers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZ2l2ZW5fbmFtZSI6IkxvcmVuYSIsImZhbWlseV9uYW1lIjoiVHVoYXkiLCJuYmYiOjE3MTczNzIyNTAsImV4cCI6MTcxNzM3NTg1MCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzExMCIsImF1ZCI6InJlc3RhdXJhbnRhcGkifQ.bjUMUCjxggfuTNfAbRrHl0NOLbxDzbY0tEvRIDpaxWE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7110/api/customers",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7110",
+							"path": [
+								"api",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZ2l2ZW5fbmFtZSI6IkxvcmVuYSIsImZhbWlseV9uYW1lIjoiVHVoYXkiLCJuYmYiOjE3MTczNzIyNTAsImV4cCI6MTcxNzM3NTg1MCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzExMCIsImF1ZCI6InJlc3RhdXJhbnRhcGkifQ.bjUMUCjxggfuTNfAbRrHl0NOLbxDzbY0tEvRIDpaxWE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7110/api/customers/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7110",
+							"path": [
+								"api",
+								"customers",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateCustomer",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZ2l2ZW5fbmFtZSI6IkxvcmVuYSIsImZhbWlseV9uYW1lIjoiVHVoYXkiLCJuYmYiOjE3MTczNzIwNzgsImV4cCI6MTcxNzM3NTY3OCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzExMCIsImF1ZCI6InJlc3RhdXJhbnRhcGkifQ.kXFRtSPQaHg6OlgeUjls4X-V7y3qjl6qbvq9Ye2CAFM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"FirstName\": \"Arturo\",\r\n    \"LastName\": \"De la Barrera\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7110/api/customers",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7110",
+							"path": [
+								"api",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZ2l2ZW5fbmFtZSI6IkxvcmVuYSIsImZhbWlseV9uYW1lIjoiVHVoYXkiLCJuYmYiOjE3MTczNzIyNTAsImV4cCI6MTcxNzM3NTg1MCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzExMCIsImF1ZCI6InJlc3RhdXJhbnRhcGkifQ.bjUMUCjxggfuTNfAbRrHl0NOLbxDzbY0tEvRIDpaxWE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"FirstName\": \"Arturo\",\r\n    \"LastName\": \"Dela Barrera\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7110/api/customers/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7110",
+							"path": [
+								"api",
+								"customers",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PartiallyUpdate",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"op\": \"replace\",\r\n        \"path\": \"/FirstName\",\r\n        \"value\": \"Luis Arturo\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7110/api/customers/7",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7110",
+							"path": [
+								"api",
+								"customers",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZ2l2ZW5fbmFtZSI6IkxvcmVuYSIsImZhbWlseV9uYW1lIjoiVHVoYXkiLCJuYmYiOjE3MTczNzIyNTAsImV4cCI6MTcxNzM3NTg1MCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzExMCIsImF1ZCI6InJlc3RhdXJhbnRhcGkifQ.bjUMUCjxggfuTNfAbRrHl0NOLbxDzbY0tEvRIDpaxWE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7110/api/customers/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7110",
+							"path": [
+								"api",
+								"customers",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Employee",
+			"item": [
+				{
+					"name": "AllEmployees",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZ2l2ZW5fbmFtZSI6IkxvcmVuYSIsImZhbWlseV9uYW1lIjoiVHVoYXkiLCJuYmYiOjE3MTczNzIyNTAsImV4cCI6MTcxNzM3NTg1MCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzExMCIsImF1ZCI6InJlc3RhdXJhbnRhcGkifQ.bjUMUCjxggfuTNfAbRrHl0NOLbxDzbY0tEvRIDpaxWE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7110/api/employees",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7110",
+							"path": [
+								"api",
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZ2l2ZW5fbmFtZSI6IkxvcmVuYSIsImZhbWlseV9uYW1lIjoiVHVoYXkiLCJuYmYiOjE3MTczNzIyNTAsImV4cCI6MTcxNzM3NTg1MCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzExMCIsImF1ZCI6InJlc3RhdXJhbnRhcGkifQ.bjUMUCjxggfuTNfAbRrHl0NOLbxDzbY0tEvRIDpaxWE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7110/api/employees/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7110",
+							"path": [
+								"api",
+								"employees",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateEmployee",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZ2l2ZW5fbmFtZSI6IkxvcmVuYSIsImZhbWlseV9uYW1lIjoiVHVoYXkiLCJuYmYiOjE3MTczNzIyNTAsImV4cCI6MTcxNzM3NTg1MCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzExMCIsImF1ZCI6InJlc3RhdXJhbnRhcGkifQ.bjUMUCjxggfuTNfAbRrHl0NOLbxDzbY0tEvRIDpaxWE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"FirstName\": \"Mariano\",\r\n    \"LastName\": \"Sanchez\",\r\n    \"Role\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7110/api/employees",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7110",
+							"path": [
+								"api",
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZ2l2ZW5fbmFtZSI6IkxvcmVuYSIsImZhbWlseV9uYW1lIjoiVHVoYXkiLCJuYmYiOjE3MTczNzIyNTAsImV4cCI6MTcxNzM3NTg1MCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzExMCIsImF1ZCI6InJlc3RhdXJhbnRhcGkifQ.bjUMUCjxggfuTNfAbRrHl0NOLbxDzbY0tEvRIDpaxWE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"FirstName\": \"Mariano\",\r\n    \"LastName\": \"Sanchez Gomez\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7110/api/employees/6",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7110",
+							"path": [
+								"api",
+								"employees",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PartiallyUpdate",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"op\": \"replace\",\r\n        \"path\": \"/LastName\",\r\n        \"value\": \"Sanchez Gomes\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7110/api/employees/4",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7110",
+							"path": [
+								"api",
+								"employees",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetManagers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7110/api/employees/managers",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7110",
+							"path": [
+								"api",
+								"employees",
+								"managers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZ2l2ZW5fbmFtZSI6IkxvcmVuYSIsImZhbWlseV9uYW1lIjoiVHVoYXkiLCJuYmYiOjE3MTczNzIyNTAsImV4cCI6MTcxNzM3NTg1MCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzExMCIsImF1ZCI6InJlc3RhdXJhbnRhcGkifQ.bjUMUCjxggfuTNfAbRrHl0NOLbxDzbY0tEvRIDpaxWE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7110/api/employees/6",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7110",
+							"path": [
+								"api",
+								"employees",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OrderAmountByEmployee",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7110/api/employees/1/average-order-amount",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7110",
+							"path": [
+								"api",
+								"employees",
+								"1",
+								"average-order-amount"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MenuItem",
+			"item": [
+				{
+					"name": "AllMenuItems",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZ2l2ZW5fbmFtZSI6IkxvcmVuYSIsImZhbWlseV9uYW1lIjoiVHVoYXkiLCJuYmYiOjE3MTczNzIyNTAsImV4cCI6MTcxNzM3NTg1MCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzExMCIsImF1ZCI6InJlc3RhdXJhbnRhcGkifQ.bjUMUCjxggfuTNfAbRrHl0NOLbxDzbY0tEvRIDpaxWE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7110/api/menu-items",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7110",
+							"path": [
+								"api",
+								"menu-items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZ2l2ZW5fbmFtZSI6IkxvcmVuYSIsImZhbWlseV9uYW1lIjoiVHVoYXkiLCJuYmYiOjE3MTczNzIyNTAsImV4cCI6MTcxNzM3NTg1MCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzExMCIsImF1ZCI6InJlc3RhdXJhbnRhcGkifQ.bjUMUCjxggfuTNfAbRrHl0NOLbxDzbY0tEvRIDpaxWE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7110/api/menu-items/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7110",
+							"path": [
+								"api",
+								"menu-items",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateMenuItem",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZ2l2ZW5fbmFtZSI6IkxvcmVuYSIsImZhbWlseV9uYW1lIjoiVHVoYXkiLCJuYmYiOjE3MTczNzIyNTAsImV4cCI6MTcxNzM3NTg1MCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzExMCIsImF1ZCI6InJlc3RhdXJhbnRhcGkifQ.bjUMUCjxggfuTNfAbRrHl0NOLbxDzbY0tEvRIDpaxWE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Name\": \"Chicken Curry\",\r\n  \"Price\": 12.99,\r\n  \"Description\": \"A delicious curry dish made with tender chicken and aromatic spices.\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7110/api/menu-items",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7110",
+							"path": [
+								"api",
+								"menu-items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Name\": \"Chicken Curry\",\r\n  \"Price\": 13.99,\r\n  \"Description\": \"A delicious curry dish made with tender chicken and aromatic spices.\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7110/api/menu-items/11",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7110",
+							"path": [
+								"api",
+								"menu-items",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PartiallyUpdate",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"op\": \"replace\",\r\n        \"path\": \"/Description\",\r\n        \"value\": \"A super delicious curry dish made with tender chicken and aromatic spices.\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7110/api/menu-items/11",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7110",
+							"path": [
+								"api",
+								"menu-items",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZ2l2ZW5fbmFtZSI6IkxvcmVuYSIsImZhbWlseV9uYW1lIjoiVHVoYXkiLCJuYmYiOjE3MTczNzIyNTAsImV4cCI6MTcxNzM3NTg1MCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzExMCIsImF1ZCI6InJlc3RhdXJhbnRhcGkifQ.bjUMUCjxggfuTNfAbRrHl0NOLbxDzbY0tEvRIDpaxWE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7110/api/menu-items/12",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7110",
+							"path": [
+								"api",
+								"menu-items",
+								"12"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reservation",
+			"item": [
+				{
+					"name": "AllReservations",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZ2l2ZW5fbmFtZSI6IkxvcmVuYSIsImZhbWlseV9uYW1lIjoiVHVoYXkiLCJuYmYiOjE3MTczNzIyNTAsImV4cCI6MTcxNzM3NTg1MCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzExMCIsImF1ZCI6InJlc3RhdXJhbnRhcGkifQ.bjUMUCjxggfuTNfAbRrHl0NOLbxDzbY0tEvRIDpaxWE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7110/api/reservations",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7110",
+							"path": [
+								"api",
+								"reservations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZ2l2ZW5fbmFtZSI6IkxvcmVuYSIsImZhbWlseV9uYW1lIjoiVHVoYXkiLCJuYmYiOjE3MTczNzIyNTAsImV4cCI6MTcxNzM3NTg1MCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzExMCIsImF1ZCI6InJlc3RhdXJhbnRhcGkifQ.bjUMUCjxggfuTNfAbRrHl0NOLbxDzbY0tEvRIDpaxWE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7110/api/reservations/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7110",
+							"path": [
+								"api",
+								"reservations",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateReservation",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZ2l2ZW5fbmFtZSI6IkxvcmVuYSIsImZhbWlseV9uYW1lIjoiVHVoYXkiLCJuYmYiOjE3MTczNzMxNjEsImV4cCI6MTcxNzM3Njc2MSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzExMCIsImF1ZCI6InJlc3RhdXJhbnRhcGkifQ.W-katYKDhaCOc3QX69uYNZxhf6MNTidVg2_oNSSlnBA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\": \"2024-07-15T12:00:00\",\r\n    \"customerId\": 2,\r\n    \"numberOfGuests\": 4,\r\n    \"notes\": \"Special occasion celebration\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7110/api/reservations",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7110",
+							"path": [
+								"api",
+								"reservations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZ2l2ZW5fbmFtZSI6IkxvcmVuYSIsImZhbWlseV9uYW1lIjoiVHVoYXkiLCJuYmYiOjE3MTczNzMxNjEsImV4cCI6MTcxNzM3Njc2MSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzExMCIsImF1ZCI6InJlc3RhdXJhbnRhcGkifQ.W-katYKDhaCOc3QX69uYNZxhf6MNTidVg2_oNSSlnBA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\": \"2024-07-18T12:00:00\",\r\n    \"customerId\": 3,\r\n    \"numberOfGuests\": 5,\r\n    \"notes\": \"Special occasion celebration\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7110/api/reservations/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7110",
+							"path": [
+								"api",
+								"reservations",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PartiallyUpdate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZ2l2ZW5fbmFtZSI6IkxvcmVuYSIsImZhbWlseV9uYW1lIjoiVHVoYXkiLCJuYmYiOjE3MTczNzMxNjEsImV4cCI6MTcxNzM3Njc2MSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzExMCIsImF1ZCI6InJlc3RhdXJhbnRhcGkifQ.W-katYKDhaCOc3QX69uYNZxhf6MNTidVg2_oNSSlnBA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"op\": \"replace\",\r\n        \"path\": \"/notes\",\r\n        \"value\": \"New additional notes for the reservation\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7110/api/reservations/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7110",
+							"path": [
+								"api",
+								"reservations",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZ2l2ZW5fbmFtZSI6IkxvcmVuYSIsImZhbWlseV9uYW1lIjoiVHVoYXkiLCJuYmYiOjE3MTczNzMxNjEsImV4cCI6MTcxNzM3Njc2MSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzExMCIsImF1ZCI6InJlc3RhdXJhbnRhcGkifQ.W-katYKDhaCOc3QX69uYNZxhf6MNTidVg2_oNSSlnBA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7110/api/reservations/9",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7110",
+							"path": [
+								"api",
+								"reservations",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ByCustomer",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZ2l2ZW5fbmFtZSI6IkxvcmVuYSIsImZhbWlseV9uYW1lIjoiVHVoYXkiLCJuYmYiOjE3MTczNzMxNjEsImV4cCI6MTcxNzM3Njc2MSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzExMCIsImF1ZCI6InJlc3RhdXJhbnRhcGkifQ.W-katYKDhaCOc3QX69uYNZxhf6MNTidVg2_oNSSlnBA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7110/api/reservations/customers/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7110",
+							"path": [
+								"api",
+								"reservations",
+								"customers",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MenuItems",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZ2l2ZW5fbmFtZSI6IkxvcmVuYSIsImZhbWlseV9uYW1lIjoiVHVoYXkiLCJuYmYiOjE3MTczNzMxNjEsImV4cCI6MTcxNzM3Njc2MSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzExMCIsImF1ZCI6InJlc3RhdXJhbnRhcGkifQ.W-katYKDhaCOc3QX69uYNZxhf6MNTidVg2_oNSSlnBA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7110/api/reservations/2/menu-items",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7110",
+							"path": [
+								"api",
+								"reservations",
+								"2",
+								"menu-items"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "AllOrders",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZ2l2ZW5fbmFtZSI6IkxvcmVuYSIsImZhbWlseV9uYW1lIjoiVHVoYXkiLCJuYmYiOjE3MTczNzMxNjEsImV4cCI6MTcxNzM3Njc2MSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzExMCIsImF1ZCI6InJlc3RhdXJhbnRhcGkifQ.W-katYKDhaCOc3QX69uYNZxhf6MNTidVg2_oNSSlnBA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7110/api/reservations/2/orders",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7110",
+							"path": [
+								"api",
+								"reservations",
+								"2",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZ2l2ZW5fbmFtZSI6IkxvcmVuYSIsImZhbWlseV9uYW1lIjoiVHVoYXkiLCJuYmYiOjE3MTczNzMxNjEsImV4cCI6MTcxNzM3Njc2MSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzExMCIsImF1ZCI6InJlc3RhdXJhbnRhcGkifQ.W-katYKDhaCOc3QX69uYNZxhf6MNTidVg2_oNSSlnBA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7110/api/reservations/2/orders/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7110",
+							"path": [
+								"api",
+								"reservations",
+								"2",
+								"orders",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZ2l2ZW5fbmFtZSI6IkxvcmVuYSIsImZhbWlseV9uYW1lIjoiVHVoYXkiLCJuYmYiOjE3MTczNzMxNjEsImV4cCI6MTcxNzM3Njc2MSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzExMCIsImF1ZCI6InJlc3RhdXJhbnRhcGkifQ.W-katYKDhaCOc3QX69uYNZxhf6MNTidVg2_oNSSlnBA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employeeId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7110/api/reservations/2/orders",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7110",
+							"path": [
+								"api",
+								"reservations",
+								"2",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZ2l2ZW5fbmFtZSI6IkxvcmVuYSIsImZhbWlseV9uYW1lIjoiVHVoYXkiLCJuYmYiOjE3MTczNzMxNjEsImV4cCI6MTcxNzM3Njc2MSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzExMCIsImF1ZCI6InJlc3RhdXJhbnRhcGkifQ.W-katYKDhaCOc3QX69uYNZxhf6MNTidVg2_oNSSlnBA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employeeId\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7110/api/reservations/2/orders/8",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7110",
+							"path": [
+								"api",
+								"reservations",
+								"2",
+								"orders",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PartiallyUpdate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZ2l2ZW5fbmFtZSI6IkxvcmVuYSIsImZhbWlseV9uYW1lIjoiVHVoYXkiLCJuYmYiOjE3MTczNzMxNjEsImV4cCI6MTcxNzM3Njc2MSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzExMCIsImF1ZCI6InJlc3RhdXJhbnRhcGkifQ.W-katYKDhaCOc3QX69uYNZxhf6MNTidVg2_oNSSlnBA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"op\": \"replace\",\r\n        \"path\": \"/EmployeeId\",\r\n        \"value\": \"1\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7110/api/reservations/2/orders/8",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7110",
+							"path": [
+								"api",
+								"reservations",
+								"2",
+								"orders",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZ2l2ZW5fbmFtZSI6IkxvcmVuYSIsImZhbWlseV9uYW1lIjoiVHVoYXkiLCJuYmYiOjE3MTczNzMxNjEsImV4cCI6MTcxNzM3Njc2MSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzExMCIsImF1ZCI6InJlc3RhdXJhbnRhcGkifQ.W-katYKDhaCOc3QX69uYNZxhf6MNTidVg2_oNSSlnBA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7110/api/reservations/2/orders/8",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7110",
+							"path": [
+								"api",
+								"reservations",
+								"2",
+								"orders",
+								"8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "OrderItem",
+			"item": [
+				{
+					"name": "AllOrderItems",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZ2l2ZW5fbmFtZSI6IkxvcmVuYSIsImZhbWlseV9uYW1lIjoiVHVoYXkiLCJuYmYiOjE3MTczNzMxNjEsImV4cCI6MTcxNzM3Njc2MSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzExMCIsImF1ZCI6InJlc3RhdXJhbnRhcGkifQ.W-katYKDhaCOc3QX69uYNZxhf6MNTidVg2_oNSSlnBA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7110/api/reservations/2/orders/2/order-items",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7110",
+							"path": [
+								"api",
+								"reservations",
+								"2",
+								"orders",
+								"2",
+								"order-items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZ2l2ZW5fbmFtZSI6IkxvcmVuYSIsImZhbWlseV9uYW1lIjoiVHVoYXkiLCJuYmYiOjE3MTczNzMxNjEsImV4cCI6MTcxNzM3Njc2MSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzExMCIsImF1ZCI6InJlc3RhdXJhbnRhcGkifQ.W-katYKDhaCOc3QX69uYNZxhf6MNTidVg2_oNSSlnBA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7110/api/reservations/2/orders/2/order-items/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7110",
+							"path": [
+								"api",
+								"reservations",
+								"2",
+								"orders",
+								"2",
+								"order-items",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateOrderItem",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZ2l2ZW5fbmFtZSI6IkxvcmVuYSIsImZhbWlseV9uYW1lIjoiVHVoYXkiLCJuYmYiOjE3MTczNzMxNjEsImV4cCI6MTcxNzM3Njc2MSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzExMCIsImF1ZCI6InJlc3RhdXJhbnRhcGkifQ.W-katYKDhaCOc3QX69uYNZxhf6MNTidVg2_oNSSlnBA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n        {\r\n            \"MenuItemId\": 5,\r\n            \"Quantity\": 1\r\n        }\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7110/api/reservations/2/orders/2/order-items",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7110",
+							"path": [
+								"api",
+								"reservations",
+								"2",
+								"orders",
+								"2",
+								"order-items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZ2l2ZW5fbmFtZSI6IkxvcmVuYSIsImZhbWlseV9uYW1lIjoiVHVoYXkiLCJuYmYiOjE3MTczNzMxNjEsImV4cCI6MTcxNzM3Njc2MSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzExMCIsImF1ZCI6InJlc3RhdXJhbnRhcGkifQ.W-katYKDhaCOc3QX69uYNZxhf6MNTidVg2_oNSSlnBA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n        {\r\n            \"MenuItemId\": 3,\r\n            \"Quantity\": 3\r\n        }\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7110/api/reservations/2/orders/2/order-items/18",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7110",
+							"path": [
+								"api",
+								"reservations",
+								"2",
+								"orders",
+								"2",
+								"order-items",
+								"18"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZ2l2ZW5fbmFtZSI6IkxvcmVuYSIsImZhbWlseV9uYW1lIjoiVHVoYXkiLCJuYmYiOjE3MTczNzMxNjEsImV4cCI6MTcxNzM3Njc2MSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzExMCIsImF1ZCI6InJlc3RhdXJhbnRhcGkifQ.W-katYKDhaCOc3QX69uYNZxhf6MNTidVg2_oNSSlnBA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"op\": \"replace\",\r\n        \"path\": \"/Quantity\",\r\n        \"value\": 2\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7110/api/reservations/2/orders/2/order-items/18",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7110",
+							"path": [
+								"api",
+								"reservations",
+								"2",
+								"orders",
+								"2",
+								"order-items",
+								"18"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZ2l2ZW5fbmFtZSI6IkxvcmVuYSIsImZhbWlseV9uYW1lIjoiVHVoYXkiLCJuYmYiOjE3MTczNzMxNjEsImV4cCI6MTcxNzM3Njc2MSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzExMCIsImF1ZCI6InJlc3RhdXJhbnRhcGkifQ.W-katYKDhaCOc3QX69uYNZxhf6MNTidVg2_oNSSlnBA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7110/api/reservations/2/orders/2/order-items/18",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7110",
+							"path": [
+								"api",
+								"reservations",
+								"2",
+								"orders",
+								"2",
+								"order-items",
+								"18"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "Authenticate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"ltuhay\",\r\n    \"password\": \"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7110/api/authentication/authenticate",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7110",
+							"path": [
+								"api",
+								"authentication",
+								"authenticate"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
